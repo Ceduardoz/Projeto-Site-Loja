@@ -11,7 +11,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Inter", sans-serif;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 /*Cabeçalho do site*/
 header{
@@ -41,12 +41,16 @@ header{
 }
 
 .busca{
-    color: white;
+    background: none;
+    border: none;
+    outline: none;
+    max-width: 190px;
+    padding: 10px 20px;
+    font-size: 16px;
     font-weight: 700;
-    border-radius: 7px;
-    background-color: transparent;
-    border: 2px solid var(--color-neutral-30);
-    padding-left: 5px;
+    border-radius: 20px;
+    box-shadow: inset 2px 5px 10px var(--color-neutral-0);
+    color: var(--color-neutral-50);
 }
 
 .navegacao {
@@ -73,7 +77,9 @@ header{
 main {
     margin: 20px;
 }
-
+.Produtos{
+    padding-left: 70px;
+}
 .imagens{
     display: inline-block;
     text-align: center;
