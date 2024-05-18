@@ -13,9 +13,10 @@
     box-sizing: border-box;
     font-family: "Inter", Arial, Helvetica, sans-serif;
 }
-/*Cabeçalho do site*/
+/*Header*/
 header{
     background-color: var(--color-neutral-10);
+    position: relative;
 }
 
 .promocao{
@@ -32,7 +33,7 @@ header{
 .entrada {
     display: flex;
     padding: 20px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .logo{
@@ -44,13 +45,30 @@ header{
     background: none;
     border: none;
     outline: none;
-    max-width: 190px;
+    max-width: 250px;
     padding: 10px 20px;
     font-size: 16px;
     font-weight: 700;
     border-radius: 20px;
     box-shadow: inset 2px 5px 10px var(--color-neutral-0);
     color: var(--color-neutral-50);
+}
+.carrinho-cadastro{
+    color: var(--color-neutral-50);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+#login{
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+#carrinho{
+    font-size: 20px;
+    padding-left: 20px;
 }
 
 .navegacao {
@@ -61,6 +79,7 @@ header{
 
 .navegacao > a {
     color: var(--color-neutral-50);
+    font-size: 18px;
     font-weight: 700;
     margin-right: 25px;
     text-decoration: none;
@@ -70,16 +89,78 @@ header{
     background-color: rgb(133, 133, 133);
     padding: 5px;
     border-radius: 5px;
+    transition-duration: 0.3s;
+}
+/*Fim do header*/
+
+/*Main*/
+
+.anuncio{
+    position: relative;
+    width: 100%;
+    height: 700px;
+    margin-bottom: 5px;
+}
+#nike{
+    background-color: #4267b3;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.418);
 }
 
-/*Área Principal dos Produtos*/
-
-main {
-    margin: 20px;
+#nike > p { 
+    color: white;
+    text-shadow: 2px 2px 4px rgba(5, 5, 5, 0.705);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    top: 500px;
+    left: 40px;
 }
+
+#adidas{
+    background-color: #25d366;
+box-shadow: 2px 2px 4px rgba(5, 5, 5, 0.705);
+}
+
+#puma{
+    background-color: #7f37c9;
+box-shadow: 2px 2px 4px rgba(5, 5, 5, 0.705);
+}
+
+#NB{
+    background-color: #ff2992;
+box-shadow: 2px 2px 4px rgba(5, 5, 5, 0.705);
+}
+
+.genero{
+    background-color: #0e0c0c;
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 25px;
+    box-shadow: 3px 2px 8px rgba(0, 0, 0, 0.418);
+}
+
+.genero > a {
+    color: var(--color-neutral-50);
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.genero> a:hover {
+    background-color: rgb(133, 133, 133);
+    padding: 5px;
+    border-radius: 5px;
+    transition-duration: 0.3s;
+}
+
 .Produtos{
-    padding-left: 70px;
+    padding-left: 90px;
 }
+
 .imagens{
     display: inline-block;
     text-align: center;
@@ -89,6 +170,8 @@ main {
     height: 310px;
     padding-top: 10px;
     margin: 10px;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.255);
 }
 
 .imagens > p {
@@ -104,7 +187,7 @@ main {
 #img:hover{
    padding: 50px;
 }
-
+/*Fim do main*/
 /*Footer*/
 
 footer {
@@ -122,6 +205,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     padding: 3rem 3.5rem;
+    margin-top: 25px;
 }
 
 #footer_contacts {
