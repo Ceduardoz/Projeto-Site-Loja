@@ -153,18 +153,33 @@ footer {
 }
 
 #facebook {
+    color: white;
     background-color: #4267b3;
-    padding-right: 8px;
+    margin-right: 3px;
+    display: flex;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
 }
 
 #whatsapp {
+    color: white;
     background-color:#25d366;
-    padding: 2px;
+    margin-right: 3px;
+    display: flex;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
 }
 
 #instagram {
+    color: white;
     background: linear-gradient(#7f37c9, #ff2992,#ff9807);
-    padding: 2px;
+    margin-right: 3px;
+    display: flex;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
 }
 
 .footer-list {
