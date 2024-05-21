@@ -4,6 +4,7 @@
     --color-neutral-0:#0e0c0c;
     --color-neutral-10:#171717;
     --color-neutral-20:#858585;
+    --color-neutral-30: #171717ad;
     --color-neutral-40:#a8a29e;
     --color-neutral-50:#f5f5f5;
     --color-neutral-60: #7f37c9;
@@ -355,4 +356,169 @@ footer {
         grid-template-columns: repeat(1,1fr);
         padding: 3rem 2rem;
     }    
+}
+
+/*Página do Cadastro e Login*/
+
+.conjunto{
+    background-image: linear-gradient(to right, var(--color-neutral-0), var(--color-neutral-10), var(--color-neutral-0)) ;
+    background-size: cover;
+    position: center top;
+    background-repeat: no-repeat;
+    margin: 30px 70px;
+    border-radius: 20px;
+}
+
+.card-total{
+    padding: 20px 50px;
+    display: inline-block;
+    justify-content: space-between;
+}
+
+.card-cadastro{
+    display: inline-block;
+    width: 370px;
+    height: 520px;
+    margin: 50px;
+    padding: 0px 20px;
+    color: var(--color-neutral-60);
+    background-color: var(--color-neutral-30);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px rgba(255, 255, 255, 0.295);
+}
+
+.cadastro {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 32px;
+    padding: 30px;
+    text-shadow: 1px 2px 3px rgba(255, 255, 255, 0.295) ;
+}
+
+.form {
+    color: var(--color-neutral-60);
+    padding: 7px 20px 10px 20px ;
+    font-weight: 900
+}
+
+.form > input {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    border: none;
+    background: transparent;
+    outline: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    color: white;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.form .botao-cadastro {
+    width: 100%;
+    height: 45px;
+    color: white;   
+    box-shadow: 2px 2px 3px rgba(255, 255, 255, 0.295);
+    border-radius: 7px;
+    margin:auto; 
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 900;
+    text-decoration: none;
+    padding: 5px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.botao-cadastro:hover {
+    border: 0px;
+    background-color: var(--color-neutral-60);
+    color: white;
+    transition-duration: 0.3s;
+    box-shadow: 4px 4px 6px rgba(255, 255, 255, 0.445);
+}
+
+/*área do Login*/
+
+.card-login {
+    display: inline-block;
+    width: 370px;
+    height: 520px;
+    margin: 50px;
+    padding: 0px 20px;
+    color: var(--color-neutral-60);
+    background-color: var(--color-neutral-30);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px rgba(255, 255, 255, 0.295);
+}
+
+.login {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 32px;
+    padding: 30px;
+    text-shadow: 1px 2px 3px rgba(255, 255, 255, 0.295);
+}
+
+.form {
+    color: var(--color-neutral-60);
+    padding: 7px 20px 10px 20px ;
+    font-weight: 900
+}
+
+.form > input {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    border: none;
+    background: transparent;
+    outline: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    color: white;
+    margin-bottom: 15px;
+
+}.lembre {
+    color: white;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin:5px;
+}
+
+.lembre > a {
+    color: white;
+    text-decoration: none;
+}
+
+.lembre > a:hover{
+    text-decoration: underline;
+}
+
+.botao-login > a {
+    width: 100%;
+    height: 45px;
+    color: white;   
+    box-shadow: 2px 2px 3px rgba(255, 255, 255, 0.295);
+    border-radius: 7px; 
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 900;
+    text-decoration: none;
+    padding: 5px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.botao-login:hover {
+    border-radius: 7px;
+    background-color: var(--color-neutral-60);
+    color: white;
+    transition-duration: 0.3s;
+    box-shadow: 4px 4px 6px rgba(255, 255, 255, 0.445);
 }
