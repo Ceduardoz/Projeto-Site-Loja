@@ -4,7 +4,7 @@
     --color-neutral-0:#0e0c0c;
     --color-neutral-10:#171717;
     --color-neutral-20:#858585;
-    --color-neutral-30: #171717ad;
+    --color-neutral-30: #1717173f;
     --color-neutral-40:#a8a29e;
     --color-neutral-50:#f5f5f5;
     --color-neutral-60: #7f37c9;
@@ -38,9 +38,9 @@ header{
     justify-content: space-around;
 }
 
-.logo{
-    color: var(--color-neutral-60);
-    text-decoration: none;
+.SK-logo{
+    width: 120px;
+    height: 120px;
 }
 
 .busca{
@@ -48,12 +48,15 @@ header{
     border: none;
     outline: none;
     max-width: 250px;
+    max-height: 50px;   
     padding: 10px 20px;
+    margin-top: 30px;
     font-size: 16px;
     font-weight: 700;
     border-radius: 20px;
     box-shadow: inset 2px 5px 10px var(--color-neutral-0);
     color: var(--color-neutral-50);
+
 }
 .carrinho-cadastro{
     color: var(--color-neutral-60);
@@ -61,6 +64,7 @@ header{
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
 #login{
@@ -70,6 +74,7 @@ header{
 
 #login:hover{
     color: white;
+    text-shadow: 2px 2px 3px var(--color-neutral-60);
     transition-duration: 0.3s;
 }
 
@@ -80,6 +85,7 @@ header{
 
 #carrinho:hover{
     color: white;
+    text-shadow: 2px 2px 3px var(--color-neutral-60);
     transition-duration: 0.3s;
 }
 
@@ -99,7 +105,7 @@ header{
 
 .navegacao > a:hover {
     color: white;
-    background-color: var(--color-neutral-10);
+    text-shadow: 2px 2px 3px var(--color-neutral-60);
     padding: 5px;
     border-radius: 5px;
     transition-duration: 0.3s;
@@ -110,8 +116,8 @@ header{
 
 .anuncio{
     position: relative;
-    width: 98%;
-    height: 500px;
+    max-width: 98%;
+    height: 700px;
     margin: 10px 10px 10px 10px;
 }
 
@@ -121,7 +127,10 @@ header{
 }
 
 #nike{
-    background-color: #4267b3;
+    background: url(/img/background/backNikefull.JPG);
+    background-position: center center;
+    background-size: 100% 700px;
+    background-repeat: no-repeat;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.418);
 }
 
@@ -132,23 +141,65 @@ header{
     font-size: 30px;
     font-weight: 700;
     position: absolute;
-    top: 300px;
+    top: 450px;
     left: 40px;
 }
 
 #adidas{
-    background-color: #25d366;
-box-shadow: 2px 2px 4px rgba(5, 5, 5, 0.705);
+    background: url(/img/background/backAdidasfull.JPG);
+    background-position: center center;
+    background-size: 100% 700px;
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 4px rgba(5, 5, 5, 0.705);
+}
+
+#adidas > p{
+    color: white;
+    text-shadow: 2px 2px 4px rgba(5, 5, 5, 0.705);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    top: 450px;
+    left: 40px;
 }
 
 #puma{
-    background-color: #7f37c9;
-box-shadow: 2px 2px 4px rgba(5, 5, 5, 0.705);
+    background: url(/img/background/backPumafull.JPG);
+    background-position: center center;
+    background-size: 100% 700px;
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 4px rgba(5, 5, 5, 0.705);
+}
+
+#puma > p{
+    color: white;
+    text-shadow: 2px 2px 4px rgba(5, 5, 5, 0.705);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    top: 450px;
+    left: 40px;
 }
 
 #NB{
-    background-color: #ff2992;
-box-shadow: 2px 2px 4px rgba(5, 5, 5, 0.705);
+    background: url(/img/background/backNbfull.JPG);
+    background-position: center center;
+    background-size: 100% 700px;
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 4px rgba(5, 5, 5, 0.705);
+}
+
+#NB > p{
+    color: white;
+    text-shadow: 2px 2px 4px rgba(5, 5, 5, 0.705);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    top: 450px;
+    left: 40px;
 }
 
 .genero{
@@ -170,11 +221,16 @@ box-shadow: 2px 2px 4px rgba(5, 5, 5, 0.705);
 }
 
 .genero> a:hover {
-    background-color: var(--color-neutral-10);
     color: white;
+    text-shadow: 2px 2px 3px var(--color-neutral-60);
     padding: 5px;
     border-radius: 5px;
     transition-duration: 0.3s;
+}
+
+#todos{
+    color: white;
+    text-shadow: 2px 2px 3px var(--color-neutral-60);
 }
 
 .Produtos{
@@ -361,7 +417,7 @@ footer {
 /*Página do Cadastro e Login*/
 
 .conjunto{
-    background-image: linear-gradient(to right, var(--color-neutral-0), var(--color-neutral-10), var(--color-neutral-0)) ;
+    background-image: linear-gradient(to right, var(--color-neutral-0), var(--color-neutral-10), var(--color-neutral-0));
     background-size: cover;
     position: center top;
     background-repeat: no-repeat;
@@ -370,16 +426,14 @@ footer {
 }
 
 .card-total{
-    padding: 20px 50px;
-    display: inline-block;
+    display: flex;
     justify-content: space-between;
+    padding: 60px 80px;
 }
 
 .card-cadastro{
-    display: inline-block;
     width: 370px;
     height: 520px;
-    margin: 50px;
     padding: 0px 20px;
     color: var(--color-neutral-60);
     background-color: var(--color-neutral-30);
@@ -443,10 +497,8 @@ footer {
 /*área do Login*/
 
 .card-login {
-    display: inline-block;
     width: 370px;
     height: 520px;
-    margin: 50px;
     padding: 0px 20px;
     color: var(--color-neutral-60);
     background-color: var(--color-neutral-30);
@@ -486,7 +538,7 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 15px;
-    margin:5px;
+    margin: 10px;
 }
 
 .lembre > a {
@@ -509,7 +561,7 @@ footer {
     font-weight: 900;
     text-decoration: none;
     padding: 5px;
-    margin-top: 15px;
+    margin-top: 45px;
     display: flex;
     justify-content: center;
 }
