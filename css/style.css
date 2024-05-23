@@ -315,7 +315,7 @@ footer {
 #facebook {
     color: var(--color-neutral-50);
     background-color: #4267b3;
-    margin-right: 3px;
+    padding-right: 3px;
     display: flex;
     justify-content: center;
     width: 20px;
@@ -784,4 +784,20 @@ footer {
     background-color: var(--color-neutral-40);
     color: var(--color-neutral-10);
     transition-duration: 0.3s;
+}
+
+.fpagamento{ 
+    position: absolute;
+    top: -70px;
+    left: 720px;
+    width: 550px;
+    height: 300px;
+    border: 2px solid var(--color-neutral-10);
+    border-radius: 10px;
+    padding: 10px 60px;
+
+}
+.fpagamento > img{
+    width: 400px;
+    height: 280px;
 }
