@@ -14,28 +14,85 @@
     <title>Site Loja</title>
 </head>
 <body>
+    <!--cabeçalho do Carrinho-->
     <header>
         <div class="entrada-carrinho">
             <div class="header-carrinho">
                 <a href="/index.html" class="logo" target="_self" rel="prev">
                     <img src="/img/Logo/SK-logo.png" alt="logo" class="SK-logo">
                 </a>
-                <p>Carrinho</p>
+                <h1>Carrinho</h1>
                 <a href="/index.html">Continuar Comprando &#10140;</a>
         </div>
     </header>
+    <!--fim do cabeçalho-->
+    <!--inicio dos produtos do carrinho-->
     <main>
-        <div class="titulo-carrinho">
-            <input type="checkbox" name="introduzir-compra">
-            <h2>Todos os Itens (3)</h2> 
-        </div>
-        <div class="todos-itens">
-            <div class="itens">
+            <div class="titulo-carrinho">
                 <input type="checkbox" name="introduzir-compra">
-                <img src="/img/nike/nike7.jpeg" alt="nike7">
+                <h2>Todos os Itens (3)</h2>
+            </div>
+        <div class="carrinho-total">
+            <div class="caminho">
+                <h2>Carrinho</h2>
+                <h2>Identificação</h2>
+                <h2>Pagamento</h2>
+            </div>
+            <div class="todos-itens">
+                <div class="itens" id="p1">
+                    <input type="checkbox" name="introduzir-compra">
+                    <img src="/img/nike/nike7.jpeg" alt="nike7">
+                     <div class="produtos-carrinho">
+                        <a href="#" alt="nike7">Air Jordan 1 Retro</a>
+                        <p>tamanho:</p>
+                        <p>R$1700,00</p>
+                     </div>
+                     <div class="quantidade">
+                        <select class="select">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                        <div class="fa-brands">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="fa-brands">
+                            <i class="fa fa-trash" aria-hidden="true"></i>
+                        </div>
+                     </div>
+                </div>
+                <div class="itens" id="p2">
+                    <input type="checkbox" name="introduzir-compra">
+                    <img src="/img/adidas/adidas9.webp" alt="adidas9">
+                     <div class="produtos-carrinho">
+                        <a href="#" alt="nike7">Adidas Grand Court 2.0</a>
+                        <p>tamanho:</p>
+                        <p>R$284,98</p>
+                     </div>
+                     <div class="quantidade">
+                        <select class="select">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                        <div class="fa-brands">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="fa-brands">
+                            <i class="fa fa-trash" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="itens" id="p3">
+                <input type="checkbox" name="introduzir-compra">
+                <img src="/img/New Balance/NB5.webp" alt="nike7">
                  <div class="produtos-carrinho">
-                    <a href="#" alt="nike7">Air Jordan 1 Retro</a>
-                    <p>R$1700,00</p>
+                    <a href="#" alt="nike7">New Balance M 996 CPS</a>
+                    <p>tamanho:</p>
+                    <p>R$749,99</p>
                  </div>
                  <div class="quantidade">
                     <select class="select">
@@ -50,12 +107,113 @@
                     <div class="fa-brands">
                         <i class="fa fa-trash" aria-hidden="true"></i>
                     </div>
-                 </div>
+            </div>
+            <div class="pagamento">
+                <div class="resumo">
+                <h2>Resumo do Pedido</h2>
+                    <p id="Valor">Valor total:</p>
+                    <p>R$2734,97 <br>
+                    <sub id="Pix">+5% Off no Pix</sub></p>
+                    <p></p>
+                    <button class="botao-comprar">
+                        Finalizar Compra
+                    </button>
+                </div>
             </div>
         </div>
-        <div class="pagamento">
-            
-        </div>
     </main>
+    <!--Fim do carrinho-->
+    <!--fim da pagina-->  
+    <footer>
+        <div id="footer_content">
+             <div id="footer_contacts">
+                <h1>logo</h1>
+                <p>
+                 Redes sociais
+                </p>
+            <div id="footer_social_midia">
+                <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                </a>
+                <span>Instagram</span>
+            </div>
+            <div id="footer_social_midia">
+                <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <span>facebook</span>
+            </div>
+            <div id="footer_social_midia">
+                <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <span>whatsapp</span>
+            </div>
+        </div>
+
+             <ul class="footer-list">
+                <li>
+                    <h3>Ajuda</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Dúvidas Gerais</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Entregas</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Pedidos</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Encontre seu tamanho</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Pagamentos</a>
+             </ul>
+
+             <ul class="footer-list">
+                <li>
+                    <h3>Sobre a (marca)</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Prósito</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Sustentabilidade</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Equipe</a>
+                </li>
+             </ul>
+             <ul class="footer-list">
+                <li>
+                    <a href="#" class="footer-link">Cadastre-se para receber informações</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Cartão presente</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Mapa da página</a>
+                </li>
+             </ul>          
+             <div class="footer_subscribe">
+                <h3>Se inscrever</h3>
+
+                <p>
+                    Digite seu e-mail para ser notificado sobre nossas novidades
+                </p>
+
+               <div id="input_group">
+                <input type="email" id="email">
+                <button>
+                    <i class="fa-regular fa-envelope"></i> 
+                </button>
+               </div> 
+             </div>
+        </div>
+        <div id="footer_copyright">
+          &#169  2024 Todos os direitos reservados
+        </div>
+    </footer>
 </body>
 </html>
