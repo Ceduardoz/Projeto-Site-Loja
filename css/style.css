@@ -237,7 +237,7 @@ header{
     padding-left: 90px;
 }
 
-.imagens{
+.imagens {
     display: inline-block;
     text-align: center;
     border: 2px solid black;
@@ -250,7 +250,13 @@ header{
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.255);
 }
 
-.imagens > p {
+.imagens > a {
+    color: var(--color-neutral-0);
+    text-decoration: none;
+
+}
+
+.imagens a > p {
     font-weight: 700;
     padding-top: 10px;
 }
@@ -312,32 +318,20 @@ footer {
     opacity: 0.8;
 }
 
-#facebook {
-    color: var(--color-neutral-50);
-    background-color: #4267b3;
-    padding-right: 3px;
-    display: flex;
-    justify-content: center;
+#facebook > img{
+    margin-left: 25px;
     width: 20px;
     height: 20px;
 }
 
-#whatsapp {
-    color: var(--color-neutral-50);
-        background-color:#25d366;
-        margin-right: 3px;
-        display: flex;
-        justify-content: center;
-        width: 20px;
-        height: 20px;
+#whatsapp > img{   
+    margin-left: 25px;
+    width: 20px;
+    height: 20px;
 }
 
-#instagram {
-    color: var(--color-neutral-50);
-    background: linear-gradient(#7f37c9, #ff2992,#ff9807);
-    margin-right: 3px;
-    display: flex;
-    justify-content: center;
+#instagram > img{
+    margin-left: 25px;
     width: 20px;
     height: 20px;
 }
@@ -805,4 +799,124 @@ footer {
 .fpagamento > img{
     width: 400px;
     height: 280px;
+}
+
+/*Página de cada tenis */
+
+.voltar {
+    color: var(--color-neutral-50);
+    text-decoration: none;
+    position: absolute;
+    top: 60px;
+    left: 50px;
+}
+
+.voltar:hover{
+    text-shadow: 2px 2px 4px var(--color-neutral-60);
+    transition-duration: 0.3s;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.produto-total {
+    flex: 1;
+    padding: 20px;
+}
+
+.produto-total img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.detalhe-produto {
+    flex: 1;
+    padding: 20px;
+}
+
+.detalhe-produto h2 {
+    margin: 0 0 20px;
+}
+
+.detalhe-produto p.preco {
+    font-size: 2rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.preco-normal{
+    text-decoration: line-through;
+}
+
+
+.verde{
+    color: #006611;
+}
+
+.detalhe-produto p.size {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.tamanhos {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.tamanhos span {
+    border: 1px solid #ddd;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.tamanhos span:hover,
+.tamanhos span.active {
+    background-color: #ddd;
+    border-color: #333;
+}
+
+.add-carrinho button {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.add-carrinho button:hover {
+    background-color: #333;
+}
+
+.descricao-produto {
+    margin-top: 30px;
+}
+
+.descricao-produto h3 {
+    margin-bottom: 10px;
+}
+
+.descricao-produto p {
+    line-height: 1.6;
+}
+
+.avaliar {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #f39c12;
 }
