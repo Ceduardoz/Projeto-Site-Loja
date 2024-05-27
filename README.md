@@ -1,2 +1,2 @@
-# Projeto-Site-Loja
+# Projeto-SKsneakers
  Projeto da faculdade
