@@ -122,8 +122,22 @@ header{
 }
 
 #principal{
-    background-color: #ff9807;
+    background: url(/img/background/backIndexfull.jpg);
+    background-position: center center;
+    background-size: 100% 700px;
+    background-repeat: no-repeat;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.418);
+}
+
+#principal > p{
+    color: var(--color-neutral-50);
+    text-shadow: 2px 2px 4px rgba(5, 5, 5, 0.705);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    top: 450px;
+    left: 40px; 
 }
 
 #nike{
